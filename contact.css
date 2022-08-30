@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Sans+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: rgb(28, 143, 238);
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+
+.logo img {
+    margin-top: 20px;
+    margin-left: 37px;
+    width: 50%;
+    height: 40px;
+    transition: all .3s ease;
+}
+
+.logo a img:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.sidebar nav {
+    width: 150px;
+    padding: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.sidebar nav li {
+    list-style: none;
+    padding: 25px 0;
+}
+
+.sidebar nav li a {
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar nav li a:hover {
+    background-color: blue;
+    color: white;
+}
+ .contact{
+    color: rgb(10, 9, 9);
+    background-image: url("bacg.jpg") ;
+    /* background-color: rgba(2, 2, 41,0.9); */
+    display: flex;
+    width: 100%;
+    font-size: 26px;
+    flex-direction: column;
+}
+.menuicon img {
+    width: 23px;
+    height: 23px;
+}
+
+.menuicon {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+}
+
+.cros {
+    margin-left: 130px;
+}
+
+.sidebargo {
+    transform: translate(-300px, 0px);
+    position: absolute;
+} 
+
+.contactme{
+    margin-left: 35%;
+    width: 50%;
+    height: 50px;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+.contactform{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20%;
+}
+
+.contactform form{
+    width: 65%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: 4%;
+}
+
+.contactform form div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contactform form button{
+    margin-top: 20px;
+    width: 70px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    margin-left: 35%;
+    border-radius: 25px;
+}
+
+.contactform form button:hover{
+    background-color: blue;
+    color: black;
+    cursor: pointer;
+}

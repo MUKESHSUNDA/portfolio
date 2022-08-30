@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Sans+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: rgb(28, 143, 238);
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+
+.logo img {
+    margin-top: 20px;
+    margin-left: 37px;
+    width: 50%;
+    height: 40px;
+    transition: all .3s ease;
+}
+
+.logo a img:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.sidebar nav {
+    width: 150px;
+    padding: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.sidebar nav li {
+    list-style: none;
+    padding: 25px 0;
+}
+
+.sidebar nav li a {
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar nav li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.main {
+    background-color: rgb(149, 240, 210);
+    width: 100%;
+    display: flex;
+}
+
+.menuicon img {
+    width: 23px;
+    height: 23px;
+}
+
+.menuicon {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+}
+
+.cros {
+    margin-left: 130px;
+}
+
+.sidebargo {
+    transform: translate(-300px, 0px);
+    position: absolute;
+}
+
+.infocontainer {
+    display: flex;
+    background-color: rgb(161, 161, 216);
+    justify-content: space-around;
+    width: 100%;
+    margin: 25px;
+}
+
+.devinfo {
+    display: flex;
+    margin-right: 1px;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 85px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.name {
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 45px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.buttons button {
+    margin: 8px;
+    padding: 9px 15px;
+    color: white;
+    background-color: rgb(74, 74, 243);
+    border-radius: 45px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.image img {
+    margin-top: 55px;
+    height: 80%;
+    width: 350px;
+}
+
+.aboutme {
+    background-color: rgb(74, 120, 160);
+    width: 100%;
+    margin: 25px;
+}
+
+@media (max-width:600px){
+    .hello {
+        font-size: 55px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .name {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Fira Sans', sans-serif;
+    }
+    
+    .about {
+        font-size: 28px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .buttons button {
+        margin: 8px;
+        padding: 9px 15px;
+        color: white;
+        background-color: rgb(74, 74, 243);
+        border-radius: 45px;
+        font-weight: bold;
+        border: 2px solid black;
+    }
+    
+    .buttons button:hover {
+        background-color: white;
+        color: blue;
+        cursor: pointer;
+    }
+    
+    .image img {
+        margin-top: 55px;
+        height: 70%;
+        width: 190px;
+    }
+}

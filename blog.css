@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Sans+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: rgb(28, 143, 238);
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+
+.logo img {
+    margin-top: 20px;
+    margin-left: 37px;
+    width: 50%;
+    height: 40px;
+    transition: all .3s ease;
+}
+
+.logo a img:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.sidebar nav {
+    width: 150px;
+    padding: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.sidebar nav li {
+    list-style: none;
+    padding: 25px 0;
+}
+
+.sidebar nav li a {
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar nav li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.main {
+    background-color: rgb(149, 240, 210);
+    width: 100%;
+    display: flex;
+}
+
+.menuicon img {
+    width: 23px;
+    height: 23px;
+}
+
+.menuicon {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+}
+
+.cros {
+    margin-left: 130px;
+}
+
+.sidebargo {
+    transform: translate(-300px, 0px);
+    position: absolute;
+}
+
+.infocontainer{
+    display: flex;
+    background-color: rgb(250, 6, 6);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 80vh; */
+    flex-direction: column;
+    margin: 25px;
+}
+
+.infocontainer h3{
+    font-weight: bold;
+    font-size: 26px;
+    background-color: white;
+}
+
+.infocontainer h5{
+    font-weight: bold;
+    background-color: white;
+    font-size: 22px;
+}
